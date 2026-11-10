@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400&family=JetBrains+Mono:wght@500;600;700&family=Oswald:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__logo" href="index.html">
+        <span class="header__logo-name">Alessio Provenza</span>
+        <span class="header__logo-role">
+          <span class="header__logo-slash" aria-hidden="true">/</span>
+          <span class="header__logo-role-text">Designer</span>
+        </span>
+      </a>
+
+      <input
+        class="header__menu-toggle"
+        type="checkbox"
+        id="mobile-menu-toggle"
+        aria-label="Toggle navigation menu"
+        aria-controls="mobile-nav"
+      />
+      <label
+        class="header__menu-button"
+        for="mobile-menu-toggle"
+        aria-hidden="true"
+      >
+        <span class="header__menu-button-line"></span>
+        <span class="header__menu-button-line"></span>
+        <span class="header__menu-button-line"></span>
+      </label>
+
+      <nav id="mobile-nav" class="header__nav" aria-label="Main menu">
+        <a class="header__link" href="menu-work.html" aria-current="page">
+          Work
+        </a>
+        <a class="header__link" href="menu-about.html">About</a>
+        <a class="header__link" href="menu-resume.html">Resume</a>
+        <a class="header__link" href="menu-contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="container-fluid page">
+      <section class="hero" aria-label="Hero">
+        <div class="hero__grid">
+          <div class="hero__block hero__block--title">
+            <img
+              class="hero__title-image"
+              src="assets/icons/portfolio.svg"
+              alt="Portfolio"
+            />
+            <span class="hero__title-text"
+              ><span class="hero__title-word">PORTFOLIO</span></span
+            >
+            <img
+              class="hero__x-grid hero__x-grid--left"
+              src="assets/icons/x-grid-left.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+
+          <div class="hero__stack">
+            <div class="hero__top">
+              <div class="hero__block hero__block--squaredec">
+                <span class="hero__number">5</span>
+                <div class="hero__squaredec" aria-hidden="true">
+                  <span
+                    class="hero__squaredec-bar hero__squaredec-bar--filled"
+                  ></span>
+                  <span
+                    class="hero__squaredec-bar hero__squaredec-bar--filled"
+                  ></span>
+                  <span
+                    class="hero__squaredec-bar hero__squaredec-bar--filled"
+                  ></span>
+                  <span
+                    class="hero__squaredec-bar hero__squaredec-bar--outlined"
+                  ></span>
+                  <span
+                    class="hero__squaredec-bar hero__squaredec-bar--outlined"
+                  ></span>
+                  <span
+                    class="hero__squaredec-bar hero__squaredec-bar--outlined"
+                  ></span>
+                  <span
+                    class="hero__squaredec-bar hero__squaredec-bar--outlined"
+                  ></span>
+                </div>
+              </div>
+
+              <div class="hero__block hero__block--intro">
+                <span class="hero__number">2</span>
+                <div class="hero__intro">
+                  <p class="hero__intro-greeting">Hi, I'm</p>
+                  <h1 class="hero__intro-name">Alessio Provenza</h1>
+                  <p class="hero__intro-description">
+                    I'm a multidisciplinary designer making digital products,
+                    games, and visual experiences, with a focus on how people
+                    interact with them.
+                  </p>
+                </div>
+                <img
+                  class="hero__x-grid hero__x-grid--right"
+                  src="assets/icons/x-grid-right.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </div>
+            </div>
+
+            <div class="hero__block hero__block--banner">
+              <div class="hero__banner-frame">
+                <div class="hero__banner-inner" aria-hidden="true"></div>
+                <span class="hero__banner-label hero__banner-label--top-left">
+                  <span class="hero__banner-label-text">2D ARTIST</span>
+                  <span
+                    class="hero__banner-label-line"
+                    aria-hidden="true"
+                  ></span>
+                </span>
+                <span class="hero__banner-label hero__banner-label--top-right">
+                  <span
+                    class="hero__banner-label-line"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="hero__banner-label-text">GRAPHIC DESIGNER</span>
+                  <span
+                    class="hero__banner-label-line"
+                    aria-hidden="true"
+                  ></span>
+                </span>
+                <span
+                  class="hero__banner-label hero__banner-label--bottom-left"
+                >
+                  <span
+                    class="hero__banner-label-line"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="hero__banner-label-text">UX/UI DESIGNER</span>
+                  <span
+                    class="hero__banner-label-line"
+                    aria-hidden="true"
+                  ></span>
+                </span>
+                <span
+                  class="hero__banner-label hero__banner-label--bottom-right"
+                >
+                  <span class="hero__banner-label-text">MOTION DESIGNER</span>
+                  <span
+                    class="hero__banner-label-line"
+                    aria-hidden="true"
+                  ></span>
+                </span>
+              </div>
+              <div class="hero__banner-art" aria-hidden="true">
+                <img
+                  class="hero__banner-decoration hero__banner-decoration--left"
+                  src="assets/icons/banner-shapes.svg"
+                  alt=""
+                />
+                <img
+                  class="hero__banner-decoration hero__banner-decoration--mobile hero__banner-decoration--left"
+                  src="assets/icons/banner-shapes-mobile.svg"
+                  alt=""
+                />
+                <img
+                  class="hero__banner-logo"
+                  src="assets/icons/banner-logo.svg"
+                  alt=""
+                />
+                <img
+                  class="hero__banner-decoration hero__banner-decoration--right"
+                  src="assets/icons/banner-shapes.svg"
+                  alt=""
+                />
+                <img
+                  class="hero__banner-decoration hero__banner-decoration--mobile hero__banner-decoration--right"
+                  src="assets/icons/banner-shapes-mobile.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__block hero__block--social">
+            <nav class="hero__social" aria-label="Social profiles">
+              <a class="hero__social-link" href="#" aria-label="Instagram">
+                <img
+                  class="hero__social-icon"
+                  src="assets/icons/instagram.svg"
+                  alt=""
+                />
+              </a>
+              <a class="hero__social-link" href="#" aria-label="LinkedIn">
+                <img
+                  class="hero__social-icon"
+                  src="assets/icons/linkedin.svg"
+                  alt=""
+                />
+              </a>
+              <a class="hero__social-link" href="#" aria-label="Behance">
+                <img
+                  class="hero__social-icon"
+                  src="assets/icons/behance.svg"
+                  alt=""
+                />
+              </a>
+            </nav>
+          </div>
+        </div>
+
+        <div class="hero__cut" aria-hidden="true">
+          <img class="hero__cut-icon" src="assets/icons/scissors.svg" alt="" />
+          <span class="hero__cut-line"></span>
+        </div>
+      </section>
+    </main>
+
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+      <h2 class="projects__title" id="projects-title">Selected Projects</h2>
+      <p class="projects__intro">
+        Selected courses focused on UX/UI design, digital product development,
+        and interactive experiences
+      </p>
+
+      <img
+        class="projects__side-decoration projects__side-decoration--left"
+        src="assets/icons/projects-side-decoration.svg"
+        alt=""
+        aria-hidden="true"
+      />
+      <img
+        class="projects__side-decoration projects__side-decoration--right"
+        src="assets/icons/projects-side-decoration.svg"
+        alt=""
+        aria-hidden="true"
+      />
+
+      <div class="projects__carousel">
+        <div class="projects__page">
+          <article class="project-card" id="project-card-convograph">
+            <div class="project-card__media" aria-hidden="true"></div>
+            <span class="project-card__badge">SaaS UX/UI</span>
+            <div class="project-card__body">
+              <h3 class="project-card__title">
+                <a class="project-card__link" href="convograph.html"
+                  >Convograph</a
+                >
+              </h3>
+              <p class="project-card__desc">
+                Convograph is a SaaS tool for narrative game development that
+                maps out branching dialogues in an interactive graph.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card" id="project-card-northwind">
+            <div class="project-card__media" aria-hidden="true"></div>
+            <span class="project-card__badge">Editorial UX/UI</span>
+            <div class="project-card__body">
+              <h3 class="project-card__title">
+                <a class="project-card__link" href="northwind.html"
+                  >Northwind</a
+                >
+              </h3>
+              <p class="project-card__desc">
+                Northwind is a digital magazine where long-form stories unfold
+                through scroll-driven layouts and quiet typography.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card" id="project-card-mosaic">
+            <div class="project-card__media" aria-hidden="true"></div>
+            <span class="project-card__badge">Mobile App</span>
+            <div class="project-card__body">
+              <h3 class="project-card__title">
+                <a class="project-card__link" href="mosaic.html">Mosaic</a>
+              </h3>
+              <p class="project-card__desc">
+                Mosaic is a habit-tracking app that turns small daily wins into
+                a colourful, tactile grid.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="projects__page">
+          <article class="project-card" id="project-card-storyframe">
+            <div class="project-card__media" aria-hidden="true"></div>
+            <span class="project-card__badge">Game UX/UI</span>
+            <div class="project-card__body">
+              <h3 class="project-card__title">
+                <a class="project-card__link" href="storyframe.html"
+                  >Storyframe</a
+                >
+              </h3>
+              <p class="project-card__desc">
+                A toolkit for building branching stories, with a clear workspace
+                for writers and designers.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card" id="project-card-fieldnotes">
+            <div class="project-card__media" aria-hidden="true"></div>
+            <span class="project-card__badge">Brand Identity</span>
+            <div class="project-card__body">
+              <h3 class="project-card__title">
+                <a class="project-card__link" href="fieldnotes.html"
+                  >Fieldnotes</a
+                >
+              </h3>
+              <p class="project-card__desc">
+                A visual identity and digital home for a community of
+                independent makers.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card" id="project-card-daymark">
+            <div class="project-card__media" aria-hidden="true"></div>
+            <span class="project-card__badge">Digital Product</span>
+            <div class="project-card__body">
+              <h3 class="project-card__title">
+                <a class="project-card__link" href="daymark.html">Daymark</a>
+              </h3>
+              <p class="project-card__desc">
+                A calm planning experience that helps people focus on the work
+                that matters today.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <nav class="projects__mobile-markers" aria-label="Project cards">
+        <a
+          class="projects__mobile-marker"
+          href="#project-card-convograph"
+          aria-label="Convograph"
+        ></a>
+        <a
+          class="projects__mobile-marker"
+          href="#project-card-northwind"
+          aria-label="Northwind"
+        ></a>
+        <a
+          class="projects__mobile-marker"
+          href="#project-card-mosaic"
+          aria-label="Mosaic"
+        ></a>
+        <a
+          class="projects__mobile-marker"
+          href="#project-card-storyframe"
+          aria-label="Storyframe"
+        ></a>
+        <a
+          class="projects__mobile-marker"
+          href="#project-card-fieldnotes"
+          aria-label="Fieldnotes"
+        ></a>
+        <a
+          class="projects__mobile-marker"
+          href="#project-card-daymark"
+          aria-label="Daymark"
+        ></a>
+      </nav>
+      <div class="projects__transition" aria-hidden="true"></div>
+    </section>
+
+    <section class="profile" id="about" aria-labelledby="profile-title">
+      <img
+        class="profile__decoration profile__decoration--left"
+        src="assets/icons/x-grid-left.svg"
+        alt=""
+        aria-hidden="true"
+      />
+
+      <div class="profile__intro">
+        <img
+          class="profile__title-icon"
+          src="assets/icons/profile-title.svg"
+          alt=""
+          aria-hidden="true"
+        />
+        <h2 class="profile__title" id="profile-title">My Profile</h2>
+
+        <p class="profile__bio">
+          I focus on UX/UI and product design, with a creative background in
+          illustration, animation, and interactive media. I bring together
+          analytical thinking and a storyteller's mindset to create digital
+          experiences that work well, feel intuitive, and stick with people.
+        </p>
+      </div>
+
+      <figure class="profile__card">
+        <div class="profile__media" aria-hidden="true"></div>
+        <figcaption class="profile__caption">
+          <span class="profile__caption-name">It's me!</span>
+          <span class="profile__caption-date">
+            <img
+              class="profile__caption-icon"
+              src="assets/icons/calendar.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            17/04/2000
+          </span>
+        </figcaption>
+      </figure>
+
+      <div class="profile__skills">
+        <img
+          class="profile__decoration profile__decoration--right"
+          src="assets/icons/x-grid-right.svg"
+          alt=""
+          aria-hidden="true"
+        />
+        <h3 class="profile__skills-title">&ndash; Skills</h3>
+
+        <div class="profile__skill-group">
+          <h4 class="profile__skill-label">Systems &amp; Interaction</h4>
+          <ul class="profile__skill-list">
+            <li class="profile__skill">UX/UI Design</li>
+            <li class="profile__skill">UX Research</li>
+            <li class="profile__skill">Usability Testing</li>
+            <li class="profile__skill">Game Design</li>
+          </ul>
+        </div>
+
+        <div class="profile__skill-group">
+          <h4 class="profile__skill-label">Visual Craft</h4>
+          <ul class="profile__skill-list">
+            <li class="profile__skill">Graphic Design</li>
+            <li class="profile__skill">Creative Direction</li>
+            <li class="profile__skill">Illustration</li>
+            <li class="profile__skill">2D Art</li>
+            <li class="profile__skill">3D Modelling</li>
+          </ul>
+        </div>
+
+        <div class="profile__skill-group">
+          <h4 class="profile__skill-label">Motion</h4>
+          <ul class="profile__skill-list">
+            <li class="profile__skill">Motion Design</li>
+            <li class="profile__skill">2D Animation</li>
+            <li class="profile__skill">Cutout</li>
+          </ul>
+        </div>
+
+        <div class="profile__skill-group">
+          <h4 class="profile__skill-label">Other</h4>
+          <ul class="profile__skill-list">
+            <li class="profile__skill">HTML/CSS</li>
+            <li class="profile__skill">Javascript</li>
+            <li class="profile__skill">Copywriting</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="profile__experience">
+        <img
+          class="profile__experience-decoration"
+          src="assets/icons/experience-decoration.svg"
+          alt=""
+          aria-hidden="true"
+        />
+        <h3 class="profile__subheading" id="experience-title">Experience</h3>
+
+        <ul class="experience" aria-labelledby="experience-title">
+          <li class="experience__item">
+            <h4 class="experience__role">UX/UI Design</h4>
+            <p class="experience__meta">Convograph · SaaS development</p>
+            <p class="experience__desc">
+              Convograph is a SaaS tool for narrative game development that lets
+              writers and designers map out branching dialogues in an
+              interactive graph. Once ready, conversations can be exported and
+              integrated into Unity's dialogue system, bridging the gap between
+              narrative design and implementation.
+            </p>
+          </li>
+
+          <li class="experience__item">
+            <h4 class="experience__role">UX/UI Design</h4>
+            <p class="experience__meta">Acumen Academy · Redesign</p>
+            <p class="experience__desc">
+              Acumen Academy is an e-learning platform designed to empower
+              changemakers through accessible courses in social impact,
+              leadership, and professional development. The project focuses on
+              making learning more intuitive and engaging, helping people build
+              the skills to create meaningful change in their communities.
+            </p>
+          </li>
+
+          <li class="experience__item">
+            <h4 class="experience__role">Game Designer/2D Artist/Director</h4>
+            <p class="experience__meta">Mangiapalazzo Studios</p>
+            <p class="experience__desc">
+              Bound By Blood is a dark psychological narrative game where you
+              play as an assassin trying to survive a police interrogation. The
+              game design focuses on simulating the stress of interrogation,
+              making each decision tense.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="profile__side">
+        <div class="profile__formations">
+          <h3
+            class="profile__subheading profile__subheading--light"
+            id="formations-title"
+          >
+            Formations
+          </h3>
+
+          <ul class="formation" aria-labelledby="formations-title">
+            <li class="formation__item">
+              <div class="formation__head">
+                <h4 class="formation__title">UX/UI Design</h4>
+                <span class="formation__period">
+                  2024 &ndash; Still in progress
+                </span>
+              </div>
+              <p class="formation__school">Start2impact</p>
+            </li>
+
+            <li class="formation__item">
+              <div class="formation__head">
+                <h4 class="formation__title">2D Animation</h4>
+                <span class="formation__period">2022 &ndash; 2023</span>
+              </div>
+              <p class="formation__school">
+                Scuola del fumetto &middot; Master in animation
+              </p>
+            </li>
+
+            <li class="formation__item">
+              <div class="formation__head">
+                <h4 class="formation__title">2D Illustration &amp; Comics</h4>
+                <span class="formation__period">2019 &ndash; 2022</span>
+              </div>
+              <p class="formation__school">
+                Scuola del fumetto &middot; Art Studies
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="profile__tools">
+          <h3 class="profile__subheading" id="tools-title">
+            Tools
+          </h3>
+
+          <ul class="tool-list" aria-labelledby="tools-title">
+            <li class="tool">
+              <img
+                class="tool__image"
+                src="assets/icons/tools/figma.svg"
+                alt="Figma"
+              />
+            </li>
+            <li class="tool tool--dark" aria-label="Photoshop">
+              <span class="tool__label" aria-hidden="true">Ps</span>
+            </li>
+            <li class="tool tool--dark" aria-label="Illustrator">
+              <span class="tool__label" aria-hidden="true">Ai</span>
+            </li>
+            <li class="tool tool--dark" aria-label="After Effects">
+              <span class="tool__label" aria-hidden="true">Ae</span>
+            </li>
+            <li class="tool tool--dark" aria-label="Premiere Pro">
+              <span class="tool__label" aria-hidden="true">Pr</span>
+            </li>
+
+            <li class="tool">
+              <img
+                class="tool__image"
+                src="assets/icons/tools/blender.svg"
+                alt="Blender"
+              />
+            </li>
+            <li class="tool" aria-hidden="true">
+              <img
+                class="tool__image"
+                src="assets/icons/tools/tool-right-of-blender.svg"
+                alt=""
+              />
+            </li>
+            <li class="tool" aria-hidden="true">
+              <img
+                class="tool__image"
+                src="assets/icons/tools/tool-next-to-blender.svg"
+                alt=""
+              />
+            </li>
+            <li class="tool" aria-hidden="true">
+              <img
+                class="tool__image"
+                src="assets/icons/tools/tool-after-blender.svg"
+                alt=""
+              />
+            </li>
+            <li class="tool" aria-hidden="true">
+              <img
+                class="tool__image"
+                src="assets/icons/tools/tool-last.svg"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact" aria-labelledby="footer-title">
+      <div class="footer__content">
+        <h2 class="footer__title" id="footer-title">
+          <span>Let’s create</span>
+          <span>something!</span>
+        </h2>
+        <p class="footer__copy">
+          Interested in working together?<br />
+          Let’s connect.
+        </p>
+        <a class="footer__cta" href="#contact-form">
+          <img
+            class="footer__icon"
+            src="assets/icons/mail.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <span>Send me a message!</span>
+        </a>
+      </div>
+    </footer>
+
+    <section
+      class="contact-form-overlay"
+      id="contact-form"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="contact-form-title"
+    >
+      <a
+        class="contact-form-overlay__backdrop"
+        href="#contact"
+        aria-label="Close contact form"
+      ></a>
+      <div class="contact-form">
+        <div class="contact-form__heading">
+          <div>
+            <h2 class="contact-form__title" id="contact-form-title">
+              Let’s talk.
+            </h2>
+            <p class="contact-form__intro">
+              Have a project in mind or an opportunity to discuss? I’d love to
+              hear from you.
+            </p>
+          </div>
+          <a
+            class="contact-form__close"
+            href="#contact"
+            aria-label="Close contact form"
+          >
+            ×
+          </a>
+        </div>
+
+        <form
+          class="contact-form__fields"
+          id="contact-form-fields"
+          method="post"
+        >
+          <div class="contact-form__field">
+            <label for="contact-name">Name</label>
+            <input
+              id="contact-name"
+              name="user_name"
+              type="text"
+              autocomplete="name"
+              placeholder="Your name"
+              required
+            />
+          </div>
+          <div class="contact-form__field">
+            <label for="contact-email">Email</label>
+            <input
+              id="contact-email"
+              name="user_email"
+              type="email"
+              autocomplete="email"
+              placeholder="your@email.com"
+              required
+            />
+          </div>
+          <div class="contact-form__field">
+            <label for="contact-subject">Subject</label>
+            <select id="contact-subject" name="subject" required>
+              <option value="" disabled selected>What’s this about?</option>
+              <option>Job opportunity</option>
+              <option>Freelance project</option>
+              <option>Collaboration</option>
+              <option>Just saying hello</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="contact-form__field">
+            <label for="contact-message">Message</label>
+            <textarea
+              id="contact-message"
+              name="message"
+              placeholder="Tell me a little about it..."
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button class="contact-form__submit" type="submit">
+            <span>Send message</span>
+          </button>
+          <p
+            class="contact-form__status"
+            id="contact-form-status"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </form>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
+    <script src="js/contact-form.js"></script>
+  </body>
+</html>

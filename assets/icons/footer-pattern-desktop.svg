@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="56" viewBox="0 0 108 56" fill="none">
+  
+  <defs>
+    <path id="fs-star" d="M-9.24-9.27C-7.57-11.08-4.07-7.04-0.42-4.71C3.18-7.1 6.61-11.2 8.32-9.42C10.02-7.64 6.22-3.87 4.03-0.05C6.29 3.73 10.15 7.38 8.47 9.19C6.8 11 3.3 6.99-0.35 4.63C-3.96 7.05-7.39 11.12-9.1 9.34C-10.8 7.56-7 3.85-4.81 0.03C-7.06-3.75-10.92-7.46-9.24-9.27Z" fill="white"/>
+  </defs>
+
+  
+  <use href="#fs-star" transform="translate(13.5 14) scale(1.02)"/>
+  <path d="M40.5 5.5 49.75 22H31.25Z" fill="none" stroke="white" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="67.5" cy="14" r="8.25" fill="none" stroke="white" stroke-width="3.5"/>
+  <rect x="86.25" y="5.75" width="16.5" height="16.5" rx="1.4" fill="none" stroke="white" stroke-width="3.5"/>
+
+  
+  <circle cx="13.5" cy="42" r="8.25" fill="none" stroke="white" stroke-width="3.5"/>
+  <rect x="32.25" y="33.75" width="16.5" height="16.5" rx="1.4" fill="none" stroke="white" stroke-width="3.5"/>
+  <use href="#fs-star" transform="translate(67.5 42) scale(1.02)"/>
+  <path d="M94.5 33.5 103.75 50H85.25Z" fill="none" stroke="white" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>
