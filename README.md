@@ -3,6 +3,8 @@
 Sito portfolio statico con una selezione di progetti di product e UX/UI design.
 Ogni progetto ha una pagina dedicata con contesto, processo e risultato.
 
+**Sito online:** <https://telod-0.github.io/Portfolio/>
+
 ## Tecnologie
 
 - **HTML5** semantico, senza framework lato client
@@ -59,9 +61,10 @@ avviene al salvataggio (output `expanded` in `css/`, come da `.vscode/settings.j
 
 ## Deploy
 
-Il sito è pubblicato con **GitHub Pages** dal branch `main` (cartella root).
+Il sito è pubblicato con **GitHub Pages** dal branch `main` (cartella root)
+all'indirizzo <https://telod-0.github.io/Portfolio/>.
 Per aggiornare il sito online basta fare push su `main`: la pubblicazione parte
-automaticamente.
+automaticamente in un paio di minuti.
 
 ## Contatti
 
