@@ -21,17 +21,17 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body id="top">
-    <header class="header">
-      <a class="header__logo" href="index.html">
+    <header class="header d-grid align-items-center align-content-center">
+      <a class="header__logo d-flex text-uppercase text-nowrap text-decoration-none" href="index.html">
         <span class="header__logo-name">Alessio Provenza</span>
-        <span class="header__logo-role">
+        <span class="header__logo-role d-flex gap-1">
           <span class="header__logo-slash" aria-hidden="true">/</span>
           <span class="header__logo-role-text">Designer</span>
         </span>
       </a>
 
       <input
-        class="header__menu-toggle"
+        class="header__menu-toggle visually-hidden"
         type="checkbox"
         id="mobile-menu-toggle"
         aria-label="Toggle navigation menu"
@@ -56,8 +56,8 @@
     <main class="project">
       <section class="project__hero" aria-label="Fieldnotes">
         <div class="project__hero-inner">
-          <div class="project__hero-top">
-            <a class="project__back" href="index.html#projects">
+          <div class="project__hero-top d-flex justify-content-between">
+            <a class="project__back d-inline-flex align-items-center text-decoration-none text-uppercase text-nowrap" href="index.html#projects">
               <svg class="project__back-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path
                   d="M19 12H5M11 6 5 12l6 6"
@@ -87,7 +87,7 @@
 
       <article class="project__content">
         <div class="project__content-inner">
-          <h1 class="project__title">Fieldnotes</h1>
+          <h1 class="project__title m-0">Fieldnotes</h1>
 
           <p class="project__desc">
             Fieldnotes is a visual identity and digital home for a community of independent makers.
@@ -98,8 +98,8 @@
           <h2 class="project__section-title">Details</h2>
 
           <div class="project__group">
-            <h3 class="project__label">Disciplines</h3>
-            <ul class="project__list">
+            <h3 class="project__label m-0">Disciplines</h3>
+            <ul class="project__list list-unstyled">
               <li>Brand identity</li>
               <li>Art direction</li>
               <li>Web design</li>
@@ -108,8 +108,8 @@
           </div>
 
           <div class="project__group">
-            <h3 class="project__label">Details</h3>
-            <ul class="project__list">
+            <h3 class="project__label m-0">Details</h3>
+            <ul class="project__list list-unstyled">
               <li>Role &mdash; Brand Designer, Web Designer</li>
               <li>Tools &mdash; Illustrator, Photoshop, Figma</li>
               <li>Team &mdash; Studio project</li>
@@ -119,7 +119,7 @@
       </article>
     </main>
 
-    <a class="project__top" href="#top">
+    <a class="project__top d-inline-flex align-items-center text-nowrap text-decoration-none" href="#top">
       <svg class="project__top-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
         <path
           d="M12 19V5M6 11l6-6 6 6"

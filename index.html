@@ -21,17 +21,17 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="header">
-      <a class="header__logo" href="index.html">
+    <header class="header d-grid align-items-center align-content-center">
+      <a class="header__logo d-flex text-uppercase text-nowrap text-decoration-none" href="index.html">
         <span class="header__logo-name">Alessio Provenza</span>
-        <span class="header__logo-role">
+        <span class="header__logo-role d-flex gap-1">
           <span class="header__logo-slash" aria-hidden="true">/</span>
           <span class="header__logo-role-text">Designer</span>
         </span>
       </a>
 
       <input
-        class="header__menu-toggle"
+        class="header__menu-toggle visually-hidden"
         type="checkbox"
         id="mobile-menu-toggle"
         aria-label="Toggle navigation menu"
@@ -59,8 +59,8 @@
 
     <main class="container-fluid page">
       <section class="hero" aria-label="Hero">
-        <div class="hero__grid">
-          <div class="hero__block hero__block--title">
+        <div class="hero__grid d-grid">
+          <div class="hero__block d-flex hero__block--title">
             <img
               class="hero__title-image"
               src="assets/icons/portfolio.svg"
@@ -79,7 +79,7 @@
 
           <div class="hero__stack">
             <div class="hero__top">
-              <div class="hero__block hero__block--squaredec">
+              <div class="hero__block d-flex hero__block--squaredec">
                 <span class="hero__number">5</span>
                 <div class="hero__squaredec" aria-hidden="true">
                   <span
@@ -106,7 +106,7 @@
                 </div>
               </div>
 
-              <div class="hero__block hero__block--intro">
+              <div class="hero__block d-flex hero__block--intro">
                 <span class="hero__number">2</span>
                 <div class="hero__intro">
                   <p class="hero__intro-greeting">Hi, I'm</p>
@@ -126,17 +126,17 @@
               </div>
             </div>
 
-            <div class="hero__block hero__block--banner">
+            <div class="hero__block d-flex hero__block--banner">
               <div class="hero__banner-frame">
                 <div class="hero__banner-inner" aria-hidden="true"></div>
-                <span class="hero__banner-label hero__banner-label--top-left">
+                <span class="hero__banner-label align-items-center text-uppercase text-nowrap hero__banner-label--top-left">
                   <span class="hero__banner-label-text">2D ARTIST</span>
                   <span
                     class="hero__banner-label-line"
                     aria-hidden="true"
                   ></span>
                 </span>
-                <span class="hero__banner-label hero__banner-label--top-right">
+                <span class="hero__banner-label align-items-center text-uppercase text-nowrap hero__banner-label--top-right">
                   <span
                     class="hero__banner-label-line"
                     aria-hidden="true"
@@ -148,7 +148,7 @@
                   ></span>
                 </span>
                 <span
-                  class="hero__banner-label hero__banner-label--bottom-left"
+                  class="hero__banner-label align-items-center text-uppercase text-nowrap hero__banner-label--bottom-left"
                 >
                   <span
                     class="hero__banner-label-line"
@@ -161,7 +161,7 @@
                   ></span>
                 </span>
                 <span
-                  class="hero__banner-label hero__banner-label--bottom-right"
+                  class="hero__banner-label align-items-center text-uppercase text-nowrap hero__banner-label--bottom-right"
                 >
                   <span class="hero__banner-label-text">MOTION DESIGNER</span>
                   <span
@@ -200,25 +200,25 @@
             </div>
           </div>
 
-          <div class="hero__block hero__block--social">
-            <nav class="hero__social" aria-label="Social profiles">
-              <a class="hero__social-link" href="#" aria-label="Instagram">
+          <div class="hero__block d-flex hero__block--social">
+            <nav class="hero__social d-flex align-items-center" aria-label="Social profiles">
+              <a class="hero__social-link d-block" href="#" aria-label="Instagram">
                 <img
-                  class="hero__social-icon"
+                  class="hero__social-icon d-block w-100 h-100"
                   src="assets/icons/instagram.svg"
                   alt=""
                 />
               </a>
-              <a class="hero__social-link" href="#" aria-label="LinkedIn">
+              <a class="hero__social-link d-block" href="#" aria-label="LinkedIn">
                 <img
-                  class="hero__social-icon"
+                  class="hero__social-icon d-block w-100 h-100"
                   src="assets/icons/linkedin.svg"
                   alt=""
                 />
               </a>
-              <a class="hero__social-link" href="#" aria-label="Behance">
+              <a class="hero__social-link d-block" href="#" aria-label="Behance">
                 <img
-                  class="hero__social-icon"
+                  class="hero__social-icon d-block w-100 h-100"
                   src="assets/icons/behance.svg"
                   alt=""
                 />
@@ -227,16 +227,16 @@
           </div>
         </div>
 
-        <div class="hero__cut" aria-hidden="true">
+        <div class="hero__cut d-flex align-items-center" aria-hidden="true">
           <img class="hero__cut-icon" src="assets/icons/scissors.svg" alt="" />
           <span class="hero__cut-line"></span>
         </div>
       </section>
     </main>
 
-    <section class="projects" id="projects" aria-labelledby="projects-title">
-      <h2 class="projects__title" id="projects-title">Selected Projects</h2>
-      <p class="projects__intro">
+    <section class="projects d-flex flex-column align-items-center gap-2" id="projects" aria-labelledby="projects-title">
+      <h2 class="projects__title m-0 text-center text-uppercase" id="projects-title">Selected Projects</h2>
+      <p class="projects__intro m-0 text-center">
         Selected courses focused on UX/UI design, digital product development,
         and interactive experiences
       </p>
@@ -256,12 +256,12 @@
 
       <div class="projects__carousel">
         <div class="projects__page">
-          <article class="project-card" id="project-card-convograph">
+          <article class="project-card d-flex flex-column" id="project-card-convograph">
             <div class="project-card__media" aria-hidden="true"></div>
-            <span class="project-card__badge">SaaS UX/UI</span>
-            <div class="project-card__body">
-              <h3 class="project-card__title">
-                <a class="project-card__link" href="convograph.html"
+            <span class="project-card__badge d-flex align-items-center text-uppercase text-nowrap">SaaS UX/UI</span>
+            <div class="project-card__body d-flex flex-column">
+              <h3 class="project-card__title m-0 text-uppercase">
+                <a class="project-card__link text-decoration-none" href="convograph.html"
                   >Convograph</a
                 >
               </h3>
@@ -272,12 +272,12 @@
             </div>
           </article>
 
-          <article class="project-card" id="project-card-northwind">
+          <article class="project-card d-flex flex-column" id="project-card-northwind">
             <div class="project-card__media" aria-hidden="true"></div>
-            <span class="project-card__badge">Editorial UX/UI</span>
-            <div class="project-card__body">
-              <h3 class="project-card__title">
-                <a class="project-card__link" href="northwind.html"
+            <span class="project-card__badge d-flex align-items-center text-uppercase text-nowrap">Editorial UX/UI</span>
+            <div class="project-card__body d-flex flex-column">
+              <h3 class="project-card__title m-0 text-uppercase">
+                <a class="project-card__link text-decoration-none" href="northwind.html"
                   >Northwind</a
                 >
               </h3>
@@ -288,12 +288,12 @@
             </div>
           </article>
 
-          <article class="project-card" id="project-card-mosaic">
+          <article class="project-card d-flex flex-column" id="project-card-mosaic">
             <div class="project-card__media" aria-hidden="true"></div>
-            <span class="project-card__badge">Mobile App</span>
-            <div class="project-card__body">
-              <h3 class="project-card__title">
-                <a class="project-card__link" href="mosaic.html">Mosaic</a>
+            <span class="project-card__badge d-flex align-items-center text-uppercase text-nowrap">Mobile App</span>
+            <div class="project-card__body d-flex flex-column">
+              <h3 class="project-card__title m-0 text-uppercase">
+                <a class="project-card__link text-decoration-none" href="mosaic.html">Mosaic</a>
               </h3>
               <p class="project-card__desc">
                 Mosaic is a habit-tracking app that turns small daily wins into
@@ -304,12 +304,12 @@
         </div>
 
         <div class="projects__page">
-          <article class="project-card" id="project-card-storyframe">
+          <article class="project-card d-flex flex-column" id="project-card-storyframe">
             <div class="project-card__media" aria-hidden="true"></div>
-            <span class="project-card__badge">Game UX/UI</span>
-            <div class="project-card__body">
-              <h3 class="project-card__title">
-                <a class="project-card__link" href="storyframe.html"
+            <span class="project-card__badge d-flex align-items-center text-uppercase text-nowrap">Game UX/UI</span>
+            <div class="project-card__body d-flex flex-column">
+              <h3 class="project-card__title m-0 text-uppercase">
+                <a class="project-card__link text-decoration-none" href="storyframe.html"
                   >Storyframe</a
                 >
               </h3>
@@ -320,12 +320,12 @@
             </div>
           </article>
 
-          <article class="project-card" id="project-card-fieldnotes">
+          <article class="project-card d-flex flex-column" id="project-card-fieldnotes">
             <div class="project-card__media" aria-hidden="true"></div>
-            <span class="project-card__badge">Brand Identity</span>
-            <div class="project-card__body">
-              <h3 class="project-card__title">
-                <a class="project-card__link" href="fieldnotes.html"
+            <span class="project-card__badge d-flex align-items-center text-uppercase text-nowrap">Brand Identity</span>
+            <div class="project-card__body d-flex flex-column">
+              <h3 class="project-card__title m-0 text-uppercase">
+                <a class="project-card__link text-decoration-none" href="fieldnotes.html"
                   >Fieldnotes</a
                 >
               </h3>
@@ -336,12 +336,12 @@
             </div>
           </article>
 
-          <article class="project-card" id="project-card-daymark">
+          <article class="project-card d-flex flex-column" id="project-card-daymark">
             <div class="project-card__media" aria-hidden="true"></div>
-            <span class="project-card__badge">Digital Product</span>
-            <div class="project-card__body">
-              <h3 class="project-card__title">
-                <a class="project-card__link" href="daymark.html">Daymark</a>
+            <span class="project-card__badge d-flex align-items-center text-uppercase text-nowrap">Digital Product</span>
+            <div class="project-card__body d-flex flex-column">
+              <h3 class="project-card__title m-0 text-uppercase">
+                <a class="project-card__link text-decoration-none" href="daymark.html">Daymark</a>
               </h3>
               <p class="project-card__desc">
                 A calm planning experience that helps people focus on the work
@@ -401,7 +401,7 @@
           alt=""
           aria-hidden="true"
         />
-        <h2 class="profile__title" id="profile-title">My Profile</h2>
+        <h2 class="profile__title text-uppercase" id="profile-title">My Profile</h2>
 
         <p class="profile__bio">
           I focus on UX/UI and product design, with a creative background in
@@ -413,11 +413,11 @@
 
       <figure class="profile__card">
         <div class="profile__media" aria-hidden="true"></div>
-        <figcaption class="profile__caption">
+        <figcaption class="profile__caption d-flex align-items-center justify-content-between">
           <span class="profile__caption-name">It's me!</span>
-          <span class="profile__caption-date">
+          <span class="profile__caption-date d-flex align-items-center">
             <img
-              class="profile__caption-icon"
+              class="profile__caption-icon d-block"
               src="assets/icons/calendar.svg"
               alt=""
               aria-hidden="true"
@@ -434,44 +434,44 @@
           alt=""
           aria-hidden="true"
         />
-        <h3 class="profile__skills-title">&ndash; Skills</h3>
+        <h3 class="profile__skills-title text-uppercase">&ndash; Skills</h3>
 
         <div class="profile__skill-group">
-          <h4 class="profile__skill-label">Systems &amp; Interaction</h4>
-          <ul class="profile__skill-list">
-            <li class="profile__skill">UX/UI Design</li>
-            <li class="profile__skill">UX Research</li>
-            <li class="profile__skill">Usability Testing</li>
-            <li class="profile__skill">Game Design</li>
+          <h4 class="profile__skill-label mt-0 mb-2 text-uppercase">Systems &amp; Interaction</h4>
+          <ul class="profile__skill-list d-flex flex-wrap gap-2 m-0 p-0 list-unstyled">
+            <li class="profile__skill text-nowrap">UX/UI Design</li>
+            <li class="profile__skill text-nowrap">UX Research</li>
+            <li class="profile__skill text-nowrap">Usability Testing</li>
+            <li class="profile__skill text-nowrap">Game Design</li>
           </ul>
         </div>
 
         <div class="profile__skill-group">
-          <h4 class="profile__skill-label">Visual Craft</h4>
-          <ul class="profile__skill-list">
-            <li class="profile__skill">Graphic Design</li>
-            <li class="profile__skill">Creative Direction</li>
-            <li class="profile__skill">Illustration</li>
-            <li class="profile__skill">2D Art</li>
-            <li class="profile__skill">3D Modelling</li>
+          <h4 class="profile__skill-label mt-0 mb-2 text-uppercase">Visual Craft</h4>
+          <ul class="profile__skill-list d-flex flex-wrap gap-2 m-0 p-0 list-unstyled">
+            <li class="profile__skill text-nowrap">Graphic Design</li>
+            <li class="profile__skill text-nowrap">Creative Direction</li>
+            <li class="profile__skill text-nowrap">Illustration</li>
+            <li class="profile__skill text-nowrap">2D Art</li>
+            <li class="profile__skill text-nowrap">3D Modelling</li>
           </ul>
         </div>
 
         <div class="profile__skill-group">
-          <h4 class="profile__skill-label">Motion</h4>
-          <ul class="profile__skill-list">
-            <li class="profile__skill">Motion Design</li>
-            <li class="profile__skill">2D Animation</li>
-            <li class="profile__skill">Cutout</li>
+          <h4 class="profile__skill-label mt-0 mb-2 text-uppercase">Motion</h4>
+          <ul class="profile__skill-list d-flex flex-wrap gap-2 m-0 p-0 list-unstyled">
+            <li class="profile__skill text-nowrap">Motion Design</li>
+            <li class="profile__skill text-nowrap">2D Animation</li>
+            <li class="profile__skill text-nowrap">Cutout</li>
           </ul>
         </div>
 
         <div class="profile__skill-group">
-          <h4 class="profile__skill-label">Other</h4>
-          <ul class="profile__skill-list">
-            <li class="profile__skill">HTML/CSS</li>
-            <li class="profile__skill">Javascript</li>
-            <li class="profile__skill">Copywriting</li>
+          <h4 class="profile__skill-label mt-0 mb-2 text-uppercase">Other</h4>
+          <ul class="profile__skill-list d-flex flex-wrap gap-2 m-0 p-0 list-unstyled">
+            <li class="profile__skill text-nowrap">HTML/CSS</li>
+            <li class="profile__skill text-nowrap">Javascript</li>
+            <li class="profile__skill text-nowrap">Copywriting</li>
           </ul>
         </div>
       </div>
@@ -483,12 +483,12 @@
           alt=""
           aria-hidden="true"
         />
-        <h3 class="profile__subheading" id="experience-title">Experience</h3>
+        <h3 class="profile__subheading d-flex align-items-center text-uppercase" id="experience-title">Experience</h3>
 
-        <ul class="experience" aria-labelledby="experience-title">
+        <ul class="experience d-flex flex-column m-0 p-0 list-unstyled" aria-labelledby="experience-title">
           <li class="experience__item">
             <h4 class="experience__role">UX/UI Design</h4>
-            <p class="experience__meta">Convograph · SaaS development</p>
+            <p class="experience__meta m-0">Convograph · SaaS development</p>
             <p class="experience__desc">
               Convograph is a SaaS tool for narrative game development that lets
               writers and designers map out branching dialogues in an
@@ -500,7 +500,7 @@
 
           <li class="experience__item">
             <h4 class="experience__role">UX/UI Design</h4>
-            <p class="experience__meta">Acumen Academy · Redesign</p>
+            <p class="experience__meta m-0">Acumen Academy · Redesign</p>
             <p class="experience__desc">
               Acumen Academy is an e-learning platform designed to empower
               changemakers through accessible courses in social impact,
@@ -512,7 +512,7 @@
 
           <li class="experience__item">
             <h4 class="experience__role">Game Designer/2D Artist/Director</h4>
-            <p class="experience__meta">Mangiapalazzo Studios</p>
+            <p class="experience__meta m-0">Mangiapalazzo Studios</p>
             <p class="experience__desc">
               Bound By Blood is a dark psychological narrative game where you
               play as an assassin trying to survive a police interrogation. The
@@ -526,17 +526,17 @@
       <div class="profile__side">
         <div class="profile__formations">
           <h3
-            class="profile__subheading profile__subheading--light"
+            class="profile__subheading d-flex align-items-center text-uppercase profile__subheading--light"
             id="formations-title"
           >
             Formations
           </h3>
 
-          <ul class="formation" aria-labelledby="formations-title">
+          <ul class="formation d-flex flex-column m-0 p-0 list-unstyled" aria-labelledby="formations-title">
             <li class="formation__item">
-              <div class="formation__head">
-                <h4 class="formation__title">UX/UI Design</h4>
-                <span class="formation__period">
+              <div class="formation__head d-flex justify-content-between">
+                <h4 class="formation__title m-0">UX/UI Design</h4>
+                <span class="formation__period text-nowrap">
                   2024 &ndash; Still in progress
                 </span>
               </div>
@@ -544,9 +544,9 @@
             </li>
 
             <li class="formation__item">
-              <div class="formation__head">
-                <h4 class="formation__title">2D Animation</h4>
-                <span class="formation__period">2022 &ndash; 2023</span>
+              <div class="formation__head d-flex justify-content-between">
+                <h4 class="formation__title m-0">2D Animation</h4>
+                <span class="formation__period text-nowrap">2022 &ndash; 2023</span>
               </div>
               <p class="formation__school">
                 Scuola del fumetto &middot; Master in animation
@@ -554,9 +554,9 @@
             </li>
 
             <li class="formation__item">
-              <div class="formation__head">
-                <h4 class="formation__title">2D Illustration &amp; Comics</h4>
-                <span class="formation__period">2019 &ndash; 2022</span>
+              <div class="formation__head d-flex justify-content-between">
+                <h4 class="formation__title m-0">2D Illustration &amp; Comics</h4>
+                <span class="formation__period text-nowrap">2019 &ndash; 2022</span>
               </div>
               <p class="formation__school">
                 Scuola del fumetto &middot; Art Studies
@@ -566,62 +566,62 @@
         </div>
 
         <div class="profile__tools">
-          <h3 class="profile__subheading" id="tools-title">
+          <h3 class="profile__subheading d-flex align-items-center text-uppercase" id="tools-title">
             Tools
           </h3>
 
-          <ul class="tool-list" aria-labelledby="tools-title">
-            <li class="tool">
+          <ul class="tool-list d-grid list-unstyled" aria-labelledby="tools-title">
+            <li class="tool d-grid">
               <img
-                class="tool__image"
+                class="tool__image d-block"
                 src="assets/icons/tools/figma.svg"
                 alt="Figma"
               />
             </li>
-            <li class="tool tool--dark" aria-label="Photoshop">
+            <li class="tool tool--dark d-grid" aria-label="Photoshop">
               <span class="tool__label" aria-hidden="true">Ps</span>
             </li>
-            <li class="tool tool--dark" aria-label="Illustrator">
+            <li class="tool tool--dark d-grid" aria-label="Illustrator">
               <span class="tool__label" aria-hidden="true">Ai</span>
             </li>
-            <li class="tool tool--dark" aria-label="After Effects">
+            <li class="tool tool--dark d-grid" aria-label="After Effects">
               <span class="tool__label" aria-hidden="true">Ae</span>
             </li>
-            <li class="tool tool--dark" aria-label="Premiere Pro">
+            <li class="tool tool--dark d-grid" aria-label="Premiere Pro">
               <span class="tool__label" aria-hidden="true">Pr</span>
             </li>
 
-            <li class="tool">
+            <li class="tool d-grid">
               <img
-                class="tool__image"
+                class="tool__image d-block"
                 src="assets/icons/tools/blender.svg"
                 alt="Blender"
               />
             </li>
-            <li class="tool" aria-hidden="true">
+            <li class="tool d-grid" aria-hidden="true">
               <img
-                class="tool__image"
+                class="tool__image d-block"
                 src="assets/icons/tools/tool-right-of-blender.svg"
                 alt=""
               />
             </li>
-            <li class="tool" aria-hidden="true">
+            <li class="tool d-grid" aria-hidden="true">
               <img
-                class="tool__image"
+                class="tool__image d-block"
                 src="assets/icons/tools/tool-next-to-blender.svg"
                 alt=""
               />
             </li>
-            <li class="tool" aria-hidden="true">
+            <li class="tool d-grid" aria-hidden="true">
               <img
-                class="tool__image"
+                class="tool__image d-block"
                 src="assets/icons/tools/tool-after-blender.svg"
                 alt=""
               />
             </li>
-            <li class="tool" aria-hidden="true">
+            <li class="tool d-grid" aria-hidden="true">
               <img
-                class="tool__image"
+                class="tool__image d-block"
                 src="assets/icons/tools/tool-last.svg"
                 alt=""
               />
@@ -633,7 +633,7 @@
 
     <footer class="footer" id="contact" aria-labelledby="footer-title">
       <div class="footer__content">
-        <h2 class="footer__title" id="footer-title">
+        <h2 class="footer__title d-flex flex-column m-0 text-uppercase" id="footer-title">
           <span>Let’s create</span>
           <span>something!</span>
         </h2>
@@ -641,9 +641,9 @@
           Interested in working together?<br />
           Let’s connect.
         </p>
-        <a class="footer__cta" href="#contact-form">
+        <a class="footer__cta d-inline-flex align-items-center justify-content-center text-decoration-none text-uppercase" href="#contact-form">
           <img
-            class="footer__icon"
+            class="footer__icon d-block"
             src="assets/icons/mail.svg"
             alt=""
             aria-hidden="true"
@@ -666,9 +666,9 @@
         aria-label="Close contact form"
       ></a>
       <div class="contact-form">
-        <div class="contact-form__heading">
+        <div class="contact-form__heading d-flex align-items-start justify-content-between">
           <div>
-            <h2 class="contact-form__title" id="contact-form-title">
+            <h2 class="contact-form__title m-0" id="contact-form-title">
               Let’s talk.
             </h2>
             <p class="contact-form__intro">
@@ -677,7 +677,7 @@
             </p>
           </div>
           <a
-            class="contact-form__close"
+            class="contact-form__close d-grid text-decoration-none"
             href="#contact"
             aria-label="Close contact form"
           >
@@ -686,12 +686,12 @@
         </div>
 
         <form
-          class="contact-form__fields"
+          class="contact-form__fields d-grid"
           id="contact-form-fields"
           method="post"
         >
-          <div class="contact-form__field">
-            <label for="contact-name">Name</label>
+          <div class="contact-form__field d-grid">
+            <label class="text-uppercase" for="contact-name">Name</label>
             <input
               id="contact-name"
               name="user_name"
@@ -701,8 +701,8 @@
               required
             />
           </div>
-          <div class="contact-form__field">
-            <label for="contact-email">Email</label>
+          <div class="contact-form__field d-grid">
+            <label class="text-uppercase" for="contact-email">Email</label>
             <input
               id="contact-email"
               name="user_email"
@@ -712,8 +712,8 @@
               required
             />
           </div>
-          <div class="contact-form__field">
-            <label for="contact-subject">Subject</label>
+          <div class="contact-form__field d-grid">
+            <label class="text-uppercase" for="contact-subject">Subject</label>
             <select id="contact-subject" name="subject" required>
               <option value="" disabled selected>What’s this about?</option>
               <option>Job opportunity</option>
@@ -723,8 +723,8 @@
               <option>Other</option>
             </select>
           </div>
-          <div class="contact-form__field">
-            <label for="contact-message">Message</label>
+          <div class="contact-form__field d-grid">
+            <label class="text-uppercase" for="contact-message">Message</label>
             <textarea
               id="contact-message"
               name="message"
@@ -733,7 +733,7 @@
               required
             ></textarea>
           </div>
-          <button class="contact-form__submit" type="submit">
+          <button class="contact-form__submit d-flex align-items-center justify-content-center text-uppercase" type="submit">
             <span>Send message</span>
           </button>
           <p
