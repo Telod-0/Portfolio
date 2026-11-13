@@ -7,9 +7,9 @@ Ogni progetto ha una pagina dedicata.
 
 ## Tecnologie
 
-- **HTML5** semantico, senza framework lato client
-- **SCSS** compilato in CSS (file unico `scss/style.scss`)
-- **Bootstrap 5.3** via CDN (usato solo per il `container-fluid` della home)
+- **HTML5**
+- **SCSS**
+- **Bootstrap 5.3**
 - **JavaScript** per il form contatti
 - **EmailJS** per l'invio del form contatti
 
